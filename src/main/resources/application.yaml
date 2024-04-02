@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: petshop
+    datasource:
+        url: jdbc://postgresql://localhost:5432/petshop
+        username: admin
+        password: admin
+    jpa:
+        hibernate:
+            ddl-auto: update
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: test
+                    jwk-set-uri: test
+server:
+    port: 8081       
